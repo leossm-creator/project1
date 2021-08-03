@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>MockUp</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/favicon-2.ico" type="image/x-icon">
+        <link rel="icon" href="/img/favicon-2.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    </head>
+
+<body>
+    <nav>
+        <div class="logo_container">
+            <!-- <div id="app">
+                {{ message }}
+            </div> -->
+            <img src="/img/sk_logo.jpg" alt="logo image" id="logo_image">
+        </div>
+        <div class="content_title">
+            <h2>Content Title Here</h2>
+        </div>
+        <div class="tab_nav">
+            <ul>
+                <li class="nav_menu">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav_menu">
+                    <a href="menu1.html">Menu 1</a>
+                </li>
+                <li class="nav_menu">
+                    <a href="menu2.html">Menu 2</a>
+                </li>
+                <li class="nav_menu">
+                    <a href="menu3.html">Menu 3</a>
+                </li>
+                <li class="nav_menu">
+                    <a href="menu4.html">Menu 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page_container">
+        <div class="content_container">
+            <div class="data">
+                <h1>Target Strucbure Based Virtual Screening and Protein–Ligand Binding Affinity Prediction</h1>
+            </div>
+            <div class="inputs">
+                <h1>Input</h1>
+                <p>Prepare the 3D structure of target protein and ligand</p>
+                <h3> Protein Structure (file format: pdb) </h3>
+                <form action = "http://10.247.241.119:8080/TSV_dock" method = "POST" name= "pform" enctype = "multipart/form-data">
+                   <input type = "file" name = "pfile">
+                <h3> Ligand Structure (file format: pdb or SDF) </h3>
+                <form action = "http://10.247.241.119:8080/TSV_dock" method = "POST" name= "lform" enctype = "multipart/form-data">
+                   <input type = "file" name = "lfile">
+                 <p>Docking Simulation <input type = "submit" name= "submit" value="Run"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+
+    </div> -->
+
+
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+</body>
+
+</html>

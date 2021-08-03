@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    align-items: center;
+}
+
+#logo_image {
+    display: flex;
+    height: 60px;
+}
+
+.logo_container {
+    height: 60px;
+    background-color: azure;
+}
+
+nav .content_title {
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin: 0 10px;
+    /* border: 2px solid green; */
+}
+
+.tab_nav {
+    display: flex;
+    float: right;
+    margin-left: auto;
+    /* margin-right: 15px; */
+    list-style: none;
+    /* border: 2px solid green; */
+}
+
+.tab_nav .nav_menu {
+    font-size: 15pt;
+    margin-right: 30px;
+}
+
+.tab_nav .nav_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.tab_nav .nav_menu a:active {
+    font-weight: bold;
+}
+
+.tab_nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.content_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: calc(100vh - 60px);
+}
+
+.page_container {
+    display: block;
+    width: 100%;
+    height: calc(100% - 90px);
+    /* height: calc(100vh - 110px); */
+    /* height: 100%; */
+    /* margin: 20px; */
+    /* height: calc(100vh - 110px); */
+}
+
+.card_container {
+    display: flex;
+    padding: 15px;
+    background-color: bisque;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.data {
+    /* /* display: flex;
+    width: 80%;
+    height: 100%; */
+    padding: 20px;
+}
+
+.inputs {
+    /* /* display: flex;
+    width: 20%;
+    height: 100%; */
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.layout-row {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.card_menu {
+    display: flex;
+    width: 300px;
+    height: 450px;
+    border: 3px solid green;
+    flex-direction: column;
+}
+
+.card_img {
+    width: 100%;
+    height: 200px;
+    background-color: darkgray;
+}
+
+.card_content {
+    padding: 10px;
+    height: 250px;
+}
+
+.card_content .card_title {
+    padding: 8px;
+    text-align: center;
+}
+
+.card_content .card_text {
+    padding: 8px;
+    text-align: left;
+}
+
+.card_links {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .footer {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    border: 3px solid red;
+} */
